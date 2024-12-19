@@ -33,12 +33,19 @@ const router = createRouter({
       // component:PokemonsView,
       component: ()=>import('../views/PokeView.vue'),
       // mejor optimizacion de los recursos, siempre poner que se cargue si es vicitada la vista
-    },
+    }, {
+    path:'/favoritos',
+    name:'favoritos',
+    // component:PokemonsView,
+    component: ()=>import('../views/FavoritosVue.vue'),
+    // mejor optimizacion de los recursos, siempre poner que se cargue si es vicitada la vista
+  },
     {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('../views/NotFoundView.vue'),
   },
+ 
   ],
 });
 

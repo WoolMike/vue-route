@@ -2,7 +2,13 @@
 import {RouterLink} from 'vue-router';
 import {useGetData} from '@/composables/getData';
 
+
+
 const {data,getData,loading,error}=useGetData();
+
+
+
+
 
 
 // const getData=async () => {
